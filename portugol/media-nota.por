@@ -1,3 +1,5 @@
+// Função do Algorítimo: Calcular a média do alunoo
+
 programa
 {
 	
@@ -22,9 +24,18 @@ programa
 		leia(nota4)
 		
 		
-		media = (nota1 + nota2 + nota3 + nota4) / 4
+		media = (nota1 + nota2 + nota3 + nota4) / 4
 
-		escreva("O aluno: " + aluno + " obteve a média: " + media)
+		escreva(aluno + " obteve a média: " + media)
+		// Verifica SE (if) a média é maior ou igual a 7 
+		se(media>=7) {
+			escreva("\n" + "Parabéns! Você foi aprovado!")
+				
+		}
+		// SENAO (else) - caso a média seja menor que 7
+		senao {
+			escreva("\n" + "Infelizmente você foi reprovado")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 454; 
+ * @POSICAO-CURSOR = 671; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
